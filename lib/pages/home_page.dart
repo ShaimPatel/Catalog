@@ -11,11 +11,11 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Welcome $day Day's of Flutter  $name",
-          style: TextStyle(
-            fontSize: 19.0,
-            fontWeight: FontWeight.bold,
-          ),
+          "Welcome $day Day's of Flutter By  $name",
+          // style: TextStyle(
+          //   fontSize: 19.0,
+          //   fontWeight: FontWeight.bold,
+          // ),
         ),
       ),
       drawer: Drawer(),

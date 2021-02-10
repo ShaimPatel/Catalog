@@ -1,8 +1,8 @@
 import 'package:day_thirty_flutter/pages/login_page.dart';
+import 'package:day_thirty_flutter/pages/themes.dart';
 import 'package:day_thirty_flutter/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:day_thirty_flutter/pages/home_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,10 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        primaryTextTheme: GoogleFonts.latoTextTheme(),
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       initialRoute: "/",
       routes: {
         "/": (context) => HomePage(),

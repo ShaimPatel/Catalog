@@ -1,3 +1,4 @@
+import 'package:day_thirty_flutter/pages/drawer_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,7 +24,7 @@ class HomePage extends StatelessWidget {
           // ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: DrawerPage(),
     );
   }
 }

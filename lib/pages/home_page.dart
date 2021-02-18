@@ -18,15 +18,20 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    var catalogJson = await rootBundle.loadString("assets/files/catalog.json");
-    var decodedData = jsonDecode(catalogJson);
-    final productdata = decodedData("products");
-    print(productdata);
+    await Future.delayed(Duration(seconds: 2));
+    final catalogJson =
+        await rootBundle.loadString("assets/files/catalog.json");
+    final decodedData = jsonDecode(catalogJson);
+    var productdata = decodedData["products"];
+    CatalogModel.items =
+        List.from(productdata).map<Item>((item) => Item.fromMap(item)).toList();
+
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final dummyList = List.generate(20, (index) => CatalogModel.items[0]);
+    // final dummyList = List.generate(20, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -36,17 +41,18 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: ListView.builder(
-        //scrollDirection: Axis.horizontal,
-        // itemCount: CatalogModel.items.length,
-        itemCount: dummyList.length,
-        itemBuilder: (context, index) {
-          return ItemWidget(
-            item: dummyList[index],
-            //item: CatalogModel.items[0],
-          );
-        },
-      ),
+      body: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+          ? ListView.builder(
+              itemCount: CatalogModel.items.length,
+              itemBuilder: (context, index) {
+                return ItemWidget(
+                  item: CatalogModel.items[index],
+                );
+              },
+            )
+          : Center(
+              child: CircularProgressIndicator(),
+            ),
       drawer: DrawerPage(),
     );
   }

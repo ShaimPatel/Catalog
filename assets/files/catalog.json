@@ -6,23 +6,23 @@
       "desc": "Apple iPhone 12th genration ",
       "price": 9999,
       "color": "#33505a",
-      "image": "https://images.unsplash.com/photo-1550029402-226115b7c579?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71XXJC7V8tL._SL1500_.jpg"
     },
     {
       "id": 2,
-      "name": "iPhone 12th Pro",
-      "desc": "Apple iPhone 12th genration ",
+      "name": "Mi 6 Pro",
+      "desc": "Android  10th genration ",
       "price": 10000,
       "color": "#33505a",
-      "image": "https://images.unsplash.com/photo-1603816245457-fe9c80b740ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=674&q=80"
+      "image": "https://st1.bgr.in/wp-content/uploads/2018/05/xiaomi-redmi-6-pro-2.jpg"
     },
     {
       "id": 3,
-      "name": "iPhone 12th Pro",
-      "desc": "Apple iPhone 12th genration ",
-      "price": 99,
+      "name": "Mi 12th Pro",
+      "desc": "Anroid  12th genration ",
+      "price": 1199,
       "color": "#33505a",
-      "image": "https://freepngimg.com/png/68660-development-apple-mobile-app-iphone-logo-android"
+      "image": "https://www.reliancedigital.in/medias/Realme-6Pro-Blue-RBS0624INSmart-Phone-491600710-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1OTcyMXxpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGUyLzkyNjEwMTczNjY1NTguanBnfDJmZGM2ODY0YmQwMDdlMjExYzliYWY5ZWJlZTkyMDBkNDRlZTI0MGIyYTI3YzJjNDM5OTBjZTFjM2I2YWE2MWQ"
     },
     {
       "id": 4,
@@ -30,7 +30,39 @@
       "desc": "Apple iPhone 12th genration ",
       "price": 9990,
       "color": "#33505a",
-      "image": "https://images.unsplash.com/photo-1550029402-226115b7c579?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
+      "image": "https://www.gizmochina.com/wp-content/uploads/2020/03/Realme-6-Pro-2-500x500.jpg"
+    },
+    {
+      "id": 1,
+      "name": "iPhone 12th Pro",
+      "desc": "Apple iPhone 12th genration ",
+      "price": 9999,
+      "color": "#33505a",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71XXJC7V8tL._SL1500_.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mi 6 Pro",
+      "desc": "Android  10th genration ",
+      "price": 10000,
+      "color": "#33505a",
+      "image": "https://st1.bgr.in/wp-content/uploads/2018/05/xiaomi-redmi-6-pro-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mi 12th Pro",
+      "desc": "Anroid  12th genration ",
+      "price": 1199,
+      "color": "#33505a",
+      "image": "https://www.reliancedigital.in/medias/Realme-6Pro-Blue-RBS0624INSmart-Phone-491600710-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1OTcyMXxpbWFnZS9qcGVnfGltYWdlcy9oZDEvaGUyLzkyNjEwMTczNjY1NTguanBnfDJmZGM2ODY0YmQwMDdlMjExYzliYWY5ZWJlZTkyMDBkNDRlZTI0MGIyYTI3YzJjNDM5OTBjZTFjM2I2YWE2MWQ"
+    },
+    {
+      "id": 4,
+      "name": "iPhone 12th Pro",
+      "desc": "Apple iPhone 12th genration ",
+      "price": 9990,
+      "color": "#33505a",
+      "image": "https://www.gizmochina.com/wp-content/uploads/2020/03/Realme-6-Pro-2-500x500.jpg"
     }
   ]
 }

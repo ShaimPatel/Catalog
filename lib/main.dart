@@ -1,6 +1,6 @@
 import 'package:day_thirty_flutter/pages/login_page.dart';
-import 'package:day_thirty_flutter/pages/themes.dart';
 import 'package:day_thirty_flutter/utils/routes.dart';
+import 'package:day_thirty_flutter/widget/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:day_thirty_flutter/pages/home_page.dart';
 

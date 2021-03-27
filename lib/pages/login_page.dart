@@ -1,5 +1,6 @@
 import 'package:day_thirty_flutter/utils/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -27,19 +28,19 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white,
+      color: context.canvasColor,
       child: SingleChildScrollView(
         child: Form(
           key: _formKey,
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(15),
+                padding: const EdgeInsets.all(0),
                 child: Card(
                   elevation: 3.0,
                   child: Image.asset(
                     "assets/images/hey_bg.png",
-                    fit: BoxFit.cover,
+                    fit: BoxFit.contain,
                   ),
                 ),
               ),
@@ -72,28 +73,28 @@ class _LoginPageState extends State<LoginPage> {
 
                         return null;
                       },
-                      cursorColor: Colors.deepPurple,
+                      cursorColor: context.theme.buttonColor,
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                       decoration: InputDecoration(
                         labelText: " Username ",
                         labelStyle: TextStyle(
-                          color: Colors.deepPurple,
+                          color: context.theme.buttonColor,
                         ),
                         prefixIcon: Icon(
                           Icons.person,
-                          color: Colors.deepPurple,
+                          color: context.theme.buttonColor,
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: Colors.deepPurple,
+                            color: context.theme.buttonColor,
                           ),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: Colors.deepPurple,
+                            color: context.theme.buttonColor,
                           ),
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -111,22 +112,22 @@ class _LoginPageState extends State<LoginPage> {
                         }
                         return null;
                       },
-                      cursorColor: Colors.deepPurple,
+                      cursorColor: context.theme.buttonColor,
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                       decoration: InputDecoration(
                         labelText: " Password ",
                         labelStyle: TextStyle(
-                          color: Colors.deepPurple,
+                          color: context.theme.buttonColor,
                         ),
                         prefixIcon: Icon(
                           Icons.lock,
-                          color: Colors.deepPurple,
+                          color: context.theme.buttonColor,
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(
-                            color: Colors.deepPurple,
+                            color: context.theme.buttonColor,
                           ),
                           borderRadius: BorderRadius.circular(12),
                         ),
@@ -156,7 +157,9 @@ class _LoginPageState extends State<LoginPage> {
                     //   ),
                     // ),
                     Material(
-                      color: changeButton ? Colors.green : Colors.deepPurple,
+                      color: changeButton
+                          ? Colors.green
+                          : context.theme.buttonColor,
                       // shape:
                       //     changeButton ? BoxShape.circle : BoxShape.rectangle,
                       borderRadius:

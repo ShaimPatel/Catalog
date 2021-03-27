@@ -12,7 +12,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
@@ -29,8 +31,8 @@ class HomeDetailPage extends StatelessWidget {
               ),
             ),
             onPressed: () {},
-            child: "Buy".text.make(),
-          ).wh(100, 40),
+            child: "Add to cart".text.make(),
+          ).wh(120, 40),
         ],
       ).p32(),
       body: SafeArea(
@@ -62,8 +64,13 @@ class HomeDetailPage extends StatelessWidget {
                           .xl
                           .make(),
                       10.heightBox,
+                      "Google News is a news aggregator service developed by Google. It presents a continuous flow of links to articles organized from thousands of publishers and magazines. Google News is available as an app on Android, iOS, and the Web. Google released a beta version in September 2002 and the official app in"
+                          .text
+                          .textStyle(context.captionStyle)
+                          .make()
+                          .p4()
                     ],
-                  ).py64(),
+                  ).py32(),
                 ),
               ),
             )

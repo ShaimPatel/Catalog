@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     TextFormField(
                       onChanged: (value) {
-                        name = value;
+                        // name = value;
                         setState(() {});
                       },
                       validator: (value) {
@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                       },
                       cursorColor: context.theme.buttonColor,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: context.theme.buttonColor,
                       ),
                       decoration: InputDecoration(
                         labelText: " Username ",
@@ -114,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                       },
                       cursorColor: context.theme.buttonColor,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: context.theme.buttonColor,
                       ),
                       decoration: InputDecoration(
                         labelText: " Password ",

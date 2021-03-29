@@ -51,22 +51,24 @@ class HomeDetailPage extends StatelessWidget {
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
                 child: Container(
-                  color: Colors.black,
+                  color: context.theme.primaryColorDark,
                   width: context.screenWidth,
                   child: Column(
                     children: [
                       catalog.name.text.xl4
-                          .color(context.theme.accentColor)
+                          .color(context.theme.backgroundColor)
                           .bold
                           .make(),
                       catalog.desc.text
                           .textStyle(context.captionStyle)
                           .xl
+                          .color(context.theme.backgroundColor)
                           .make(),
                       10.heightBox,
                       "Google News is a news aggregator service developed by Google. It presents a continuous flow of links to articles organized from thousands of publishers and magazines. Google News is available as an app on Android, iOS, and the Web. Google released a beta version in September 2002 and the official app in"
                           .text
                           .textStyle(context.captionStyle)
+                          .color(context.theme.backgroundColor)
                           .make()
                           .p4()
                     ],

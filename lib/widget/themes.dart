@@ -6,7 +6,7 @@ class MyTheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.poppins().fontFamily,
-        cardColor: Colors.white,
+        cardColor: Colors.blue[50],
         canvasColor: creamColor,
         buttonColor: darkBluishColor,
         accentColor: darkBluishColor,

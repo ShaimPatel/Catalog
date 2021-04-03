@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.day_thirty_flutter">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="day_thirty_flutter"
+        android:label="catalog"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

@@ -62,7 +62,7 @@ class HomeDetailPage extends StatelessWidget {
                           .textStyle(context.captionStyle)
                           .color(context.theme.backgroundColor)
                           .make()
-                          .p4()
+                          .p(context.isMobile ? 4 : 10),
                     ],
                   ).py32(),
                 ),

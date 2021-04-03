@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:day_thirty_flutter/core/store.dart';
 import 'package:day_thirty_flutter/models/cart_model.dart';
 import 'package:day_thirty_flutter/models/catalog.dart';
@@ -9,7 +7,6 @@ import 'package:day_thirty_flutter/widget/home_widget/catalog_list.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:http/http.dart' as http;

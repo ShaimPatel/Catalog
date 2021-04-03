@@ -65,7 +65,7 @@ class _CartList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    VxState.listen(context, to: [RemoveMutation]);
+    VxState.watch(context, on: [RemoveMutation]);
     final CartModel _cart = (VxState.store as MyStore).cart;
 
     // ignore: null_aware_in_condition
